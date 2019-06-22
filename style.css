@@ -1,0 +1,57 @@
+body {
+height: 100%;
+background-image: url("samuel-zeller-119019-unsplash.jpg");
+background-repeat: no repeat;
+background-attachment: fixed;
+background-blend-mode: lighten;
+background-size: 100%;
+
+}
+
+header {
+text-align: center;
+size: 50px;
+padding: 3px;
+background: white
+
+}
+
+
+main {
+
+
+
+
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  color: white;
+}
+
+div.gallery:hover {
+  border: 1px solid white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+
+
+
+
+}
+
+
+article {
+
+
+
+}
+
