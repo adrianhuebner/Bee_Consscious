@@ -1,3 +1,4 @@
+var honeyList = [];
 
 var username = prompt("What is your name?");
 
@@ -48,13 +49,20 @@ if (wantsFreeHoney === 'yes') {
   var numberOfJars = prompt('How many jars of honey would you like?');
  
   for (numberOfJars; numberOfJars > 0; numberOfJars--) {
-    var userState = prompt('What state do you live in?');
-    var userFlavor = prompt('What flavor profile do you like?');
+    var wantsHoney = {};
+    wantsHoney.state = prompt('What state do you live in?');
+    wantsHoney.flavor = prompt('What flavor profile do you like?');
 
-    var html = freeHoneyProgram(userState, userFlavor);
 
-    document.write(html);
+    wantsHoney.html = freeHoneyProgram(wantsHoney.state, wantsHoney.flavor);
+
+    honeyList.push(wantsHoney);
+    
   }
+
+  for (var index = 0; index < honeyList.length; index++)
+  document.write(honeyList[index].html);
+
 } 
 
 else {
